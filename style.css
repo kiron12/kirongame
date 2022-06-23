@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #2F7336;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #AA3A38, #2F7336);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #AA3A38, #2F7336); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+h1{
+    margin-top: 20px;
+    text-align: center;
+    color: azure;
+}
+button{
+    padding: 10px;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    color: black;
+    background: rgb(226, 226, 164);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+
+#player{
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(21, 230, 219);
+    color: rgb(11, 15, 230);
+    width: 120px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,auto);
+}
+.div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid white;
+    font-size: 80px;
+    width: bold;
+    text-align: center;
+    font-family: monospace;
+    color: aliceblue;
+    
+}
+.div:nth-child(1),
+.div:nth-child(2),
+.div:nth-child(3){
+    border-top:none;
+}
+.div:nth-child(1),
+.div:nth-child(4),
+.div:nth-child(7){
+    border-left:none;
+}
+.div:nth-child(3),
+.div:nth-child(6),
+.div:nth-child(9){
+    border-right:none;
+}
+.div:nth-child(7),
+.div:nth-child(8),
+.div:nth-child(9){
+    border-bottom:none;
+}
+
+
+
+button:hover{
+    color: gold;
+    background-color: #c58988;
+}
